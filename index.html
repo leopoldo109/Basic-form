@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Form</title>
+        <link
+            rel="stylesheet"
+            href="style.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="https://cdn-icons-png.flaticon.com/512/88/88450.png"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1 id="title">freeCodeCamp Survey Form</h1>
+                <p id="description">
+                    Thank you for taking the time to help us improve the
+                    platform
+                </p>
+            </header>
+            <form
+                action=""
+                id="survey-form"
+            >
+                <fieldset>
+                    <label id="name-label"
+                        >Name:
+                        <input
+                            type="text"
+                            name=""
+                            id="name"
+                            required
+                            placeholder="Enter your name"
+                    /></label>
+                    <label id="email-label"
+                        >Email:
+                        <input
+                            type="email"
+                            id="email"
+                            required
+                            placeholder="Enter your email"
+                    /></label>
+                    <label id="number-label"
+                        >Age:
+                        <input
+                            type="number"
+                            name=""
+                            id="number"
+                            min="10"
+                            max="120"
+                            placeholder="Enter your age"
+                    /></label>
+                </fieldset>
+                <hr />
+                <fieldset>
+                    <label id="dropdown-input">
+                        Which option best describes your current role?
+                        <select id="dropdown">
+                            <option>Select current role</option>
+                            <option value="student">Student</option>
+                            <option value="job">Full Time Job</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                    <label id="description"
+                        >Would you recommend freeCodeCamp to a friend?</label
+                    >
+                    <label id="option-1">
+                        <input
+                            type="radio"
+                            name="rate"
+                            id="definitely"
+                            value="definitely"
+                        />
+                        Definitely
+                    </label>
+                    <label id="option-2">
+                        <input
+                            type="radio"
+                            name="rate"
+                            id="maybe"
+                            value="definitely"
+                        />
+                        Maybe
+                    </label>
+                    <label id="option-3">
+                        <input
+                            type="radio"
+                            name="rate"
+                            id="sure"
+                            value="definitely"
+                        />
+                        Not sure
+                    </label>
+                </fieldset>
+                <hr />
+                <fieldset>
+                    <label id="description"
+                        >What would you like to see improved? (Check all that
+                        apply)</label
+                    >
+                    <label id="Front">
+                        <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            value="front"
+                        />
+                        Front-end Projects
+                    </label>
+                    <label id="Back">
+                        <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            value="back"
+                        />
+                        Back-end Projects
+                    </label>
+                    <label id="Data">
+                        <input
+                            name=""
+                            type="checkbox"
+                            id=""
+                            value="data"
+                        />
+                        Data Visualization
+                    </label>
+                    <label id="comment">
+                        Any comments or suggestions?
+                        <textarea
+                            id="comment"
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter your commnet here..."
+                        ></textarea>
+                    </label>
+                </fieldset>
+                <input
+                    type="submit"
+                    id="submit"
+                    value="Submit"
+                />
+            </form>
+        </main>
+    </body>
+</html>
